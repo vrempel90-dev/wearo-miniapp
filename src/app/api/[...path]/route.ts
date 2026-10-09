@@ -8,6 +8,8 @@ import {addVariant,applySeller,saveProduct,sellerDashboard,setInventory,updateSe
 import {uploadImage} from '@/server/uploads';
 import {AppError} from '@/server/errors';
 import {cookies} from 'next/headers';
+import {cart,setCartItem} from '@/server/cart';
+import {checkout,listOrders,transitionOrder} from '@/server/orders';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 async function route(req:Request,{params}:{params:Promise<{path:string[]}>}) {
@@ -36,11 +38,18 @@ async function route(req:Request,{params}:{params:Promise<{path:string[]}>}) {
       (await cookies()).delete('wearo_session');return {ok:true};
     }
     if(p[0]==='seller-applications'&&method==='POST') return applySeller(user,await body(req));
+    if(p[0]==='cart'&&method==='GET')return cart(user);
+    if(p[0]==='cart'&&method==='POST')return setCartItem(user,await body(req));
+    if(p[0]==='checkout'&&method==='POST'){await rateLimit(`checkout:${user.id}`,10);return checkout(user,await body(req));}
+    if(p[0]==='orders'&&p.length===1&&method==='GET')return listOrders(user);
+    if(p[0]==='orders'&&p.length===2&&method==='PATCH')return transitionOrder(user,p[1],await body(req));
     if(p[0]==='sellers'&&p.length>=2){
       const sellerId=p[1];
       if(p.length===2&&method==='GET')return sellerDashboard(user,sellerId);
       if(p.length===2&&method==='PATCH')return updateSeller(user,sellerId,await body(req));
       if(p[2]==='images'&&method==='POST')return uploadImage(req,user,sellerId);
+      if(p[2]==='orders'&&p.length===3&&method==='GET')return listOrders(user,sellerId);
+      if(p[2]==='orders'&&p.length===4&&method==='PATCH')return transitionOrder(user,p[3],await body(req),sellerId);
       if(p[2]==='products'&&method==='POST'&&p.length===3)return saveProduct(user,sellerId,await body(req));
       if(p[2]==='products'&&method==='PATCH'&&p.length===4)return saveProduct(user,sellerId,await body(req),p[3]);
       if(p[2]==='products'&&p[4]==='variants'&&method==='POST')return addVariant(user,sellerId,p[3],await body(req));
