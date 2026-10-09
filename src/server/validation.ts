@@ -1,0 +1,11 @@
+import {z} from 'zod';
+export const id=z.string().min(1).max(80);
+export const minor=z.number().int().min(1).max(100_000_000);
+export const sellerApplicationInput=z.object({name:z.string().trim().min(2).max(100),slug:z.string().regex(/^[a-z0-9][a-z0-9-]{2,49}$/),description:z.string().max(2000).default(''),city:z.string().trim().min(2).max(100),contact:z.string().trim().min(5).max(200)}).strict();
+export const sellerProfileInput=sellerApplicationInput.omit({slug:true,contact:true}).strict();
+export const variantInput=z.object({sku:z.string().trim().min(2).max(80),size:z.string().trim().min(1).max(20),color:z.string().trim().min(1).max(40),available:z.number().int().min(0).max(100000)}).strict();
+export const productInput=z.object({title:z.string().trim().min(3).max(160),description:z.string().trim().min(10).max(5000),categoryId:id,brand:z.string().trim().max(80).optional(),priceMinor:minor,variants:z.array(variantInput).min(1).max(50),imageIds:z.array(id).max(8).default([])}).strict();
+export const productUpdateInput=productInput.omit({variants:true}).strict();
+export const addressInput=z.object({name:z.string().trim().min(2).max(100),phone:z.string().regex(/^\+?\d{10,15}$/),city:z.string().trim().min(2).max(100),street:z.string().trim().min(3).max(250)}).strict();
+export const checkoutInput=z.object({idempotencyKey:z.string().uuid(),address:addressInput}).strict();
+export const orderTransitionInput=z.object({status:z.enum(['PENDING','CONFIRMED','PROCESSING','SHIPPED','DELIVERED','CANCELLED','RETURN_REQUESTED','RETURNED']),carrier:z.string().trim().min(2).max(100).optional(),trackingNumber:z.string().trim().min(3).max(120).optional()}).strict();

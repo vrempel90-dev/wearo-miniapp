@@ -1,3 +1,2 @@
-export default function Home() {
-  return <main><h1>WEARO</h1><p>Fashion-маркетплейс Казахстана</p></main>;
-}
+import Marketplace from '@/components/marketplace';
+export default function Home() { return <Marketplace/>; }
