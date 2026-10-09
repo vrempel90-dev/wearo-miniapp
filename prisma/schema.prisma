@@ -111,6 +111,9 @@ model Seller {
   city          String
   status        SellerStatus       @default(PENDING)
   commissionBps Int                @default(1000)
+  demoDataset   String?
+  demoKey       String?            @unique
+  logoUrl       String?
   createdAt     DateTime           @default(now())
   updatedAt     DateTime           @updatedAt
   application   SellerApplication?
@@ -120,6 +123,7 @@ model Seller {
   images        ProductImage[]
 
   @@index([status])
+  @@index([demoDataset])
 }
 
 model SellerApplication {
@@ -168,27 +172,33 @@ model Brand {
 }
 
 model Product {
-  id             String           @id @default(cuid())
-  sellerId       String
-  seller         Seller           @relation(fields: [sellerId], references: [id])
-  categoryId     String
-  category       Category         @relation(fields: [categoryId], references: [id])
-  brandId        String?
-  brand          Brand?           @relation(fields: [brandId], references: [id])
-  title          String
-  description    String
-  priceMinor     Int
-  status         ProductStatus    @default(PENDING)
-  moderationNote String?
-  createdAt      DateTime         @default(now())
-  updatedAt      DateTime         @updatedAt
-  variants       ProductVariant[]
-  images         ProductImage[]
-  favorites      Favorite[]
+  id              String           @id @default(cuid())
+  sellerId        String
+  seller          Seller           @relation(fields: [sellerId], references: [id])
+  categoryId      String
+  category        Category         @relation(fields: [categoryId], references: [id])
+  brandId         String?
+  brand           Brand?           @relation(fields: [brandId], references: [id])
+  title           String
+  description     String
+  priceMinor      Int
+  oldPriceMinor   Int?
+  discountPercent Int?
+  demoDataset     String?
+  demoKey         String?          @unique
+  styleTag        String?
+  status          ProductStatus    @default(PENDING)
+  moderationNote  String?
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  variants        ProductVariant[]
+  images          ProductImage[]
+  favorites       Favorite[]
 
   @@index([sellerId, status])
   @@index([status, categoryId, priceMinor])
   @@index([brandId])
+  @@index([demoDataset])
 }
 
 model ProductVariant {
