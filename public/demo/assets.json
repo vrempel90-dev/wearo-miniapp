@@ -1,0 +1,927 @@
+{
+  "dataset": "wearo-fashion-v1",
+  "source": "OpenAI image_gen built-in",
+  "license": "Individually generated unbranded fictional product photographs for this project",
+  "images": [
+    {
+      "serial": "001",
+      "file": "001.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique photograph for a fictional Kazakhstan fashion marketplace demo. Primary request: one unbranded women's oversized sand beige cotton jacket with two large patch pockets and ivory buttons, long sleeves, clean front view ghost mannequin product photography, garment only no person. Background warm off-white seamless studio, soft diffused light and subtle shadow, crisp textile details, elegant high end ecommerce fashion photograph. Entire jacket fully visible with generous margin, portrait 3:4 composition. No text, no logos, no watermark, no collage, no additional products."
+    },
+    {
+      "serial": "002",
+      "file": "002.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-002. One unbranded women's cotton jacket with buttons and patch pockets in warm ivory, model variation Haze 002. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "003",
+      "file": "003.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-003. One unbranded women's cotton jacket with buttons and patch pockets in charcoal grey, model variation Arc 003. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "004",
+      "file": "004.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-004. One unbranded women's cotton jacket with buttons and patch pockets in black, model variation Linea 004. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "005",
+      "file": "005.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-005. One unbranded women's cotton jacket with buttons and patch pockets in muted olive green, model variation Flow 005. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "006",
+      "file": "006.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-006. One unbranded women's cotton jacket with buttons and patch pockets in dark chocolate brown, model variation Dune 006. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "007",
+      "file": "007.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-007. One unbranded women's cotton jacket with buttons and patch pockets in deep blue, model variation Tempo 007. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "008",
+      "file": "008.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-008. One unbranded women's cotton jacket with buttons and patch pockets in medium grey, model variation Aster 008. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "009",
+      "file": "009.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-009. One unbranded women's cotton jacket with buttons and patch pockets in dusty rose, model variation Vista 009. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "010",
+      "file": "010.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-010. One unbranded women's cotton jacket with buttons and patch pockets in white, model variation Frame 010. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "011",
+      "file": "011.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-011. One unbranded women's short sleeve cotton crew neck t-shirt in sand beige, model variation Echo 011. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "012",
+      "file": "012.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-012. One unbranded women's short sleeve cotton crew neck t-shirt in warm ivory, model variation Orbit 012. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "013",
+      "file": "013.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-013. One unbranded women's short sleeve cotton crew neck t-shirt in charcoal grey, model variation Muse 013. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "014",
+      "file": "014.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-014. One unbranded women's short sleeve cotton crew neck t-shirt in black, model variation Silva 014. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "015",
+      "file": "015.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-015. One unbranded women's short sleeve cotton crew neck t-shirt in muted olive green, model variation Calm 015. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "016",
+      "file": "016.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-016. One unbranded women's short sleeve cotton crew neck t-shirt in dark chocolate brown, model variation Rise 016. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "017",
+      "file": "017.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-017. One unbranded women's short sleeve cotton crew neck t-shirt in deep blue, model variation Lino 017. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "018",
+      "file": "018.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-018. One unbranded women's short sleeve cotton crew neck t-shirt in medium grey, model variation Cove 018. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "019",
+      "file": "019.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-019. One unbranded women's short sleeve cotton crew neck t-shirt in dusty rose, model variation Riva 019. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "020",
+      "file": "020.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-020. One unbranded women's short sleeve cotton crew neck t-shirt in white, model variation Trace 020. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "021",
+      "file": "021.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-021. One unbranded women's short sleeve cotton crew neck t-shirt in sand beige, model variation Forma 021. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "022",
+      "file": "022.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-022. One unbranded women's short sleeve cotton crew neck t-shirt in warm ivory, model variation Haze 022. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "023",
+      "file": "023.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-023. One unbranded women's short sleeve cotton crew neck t-shirt in charcoal grey, model variation Arc 023. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "024",
+      "file": "024.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-024. One unbranded women's short sleeve cotton crew neck t-shirt in black, model variation Linea 024. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "025",
+      "file": "025.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-025. One unbranded women's short sleeve cotton crew neck t-shirt in muted olive green, model variation Flow 025. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "026",
+      "file": "026.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-026. One unbranded women's short sleeve cotton crew neck t-shirt in dark chocolate brown, model variation Dune 026. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "027",
+      "file": "027.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-027. One unbranded women's short sleeve cotton crew neck t-shirt in deep blue, model variation Tempo 027. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "028",
+      "file": "028.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-028. One unbranded women's short sleeve cotton crew neck t-shirt in medium grey, model variation Aster 028. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "029",
+      "file": "029.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-029. One unbranded women's short sleeve cotton crew neck t-shirt in dusty rose, model variation Vista 029. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "030",
+      "file": "030.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-030. One unbranded women's short sleeve cotton crew neck t-shirt in white, model variation Frame 030. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "031",
+      "file": "031.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-031. One unbranded women's short sleeve cotton crew neck t-shirt in sand beige, model variation Echo 031. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "032",
+      "file": "032.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-032. One unbranded women's short sleeve cotton crew neck t-shirt in warm ivory, model variation Orbit 032. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "033",
+      "file": "033.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-033. One unbranded women's short sleeve cotton crew neck t-shirt in charcoal grey, model variation Muse 033. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "034",
+      "file": "034.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-034. One unbranded women's short sleeve cotton crew neck t-shirt in black, model variation Silva 034. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "035",
+      "file": "035.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-035. One unbranded women's short sleeve cotton crew neck t-shirt in muted olive green, model variation Calm 035. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "036",
+      "file": "036.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-036. One unbranded women's oversized cotton hoodie with kangaroo pocket in dark chocolate brown, model variation Rise 036. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "037",
+      "file": "037.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-037. One unbranded women's oversized cotton hoodie with kangaroo pocket in deep blue, model variation Lino 037. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "038",
+      "file": "038.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-038. One unbranded women's oversized cotton hoodie with kangaroo pocket in medium grey, model variation Cove 038. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "039",
+      "file": "039.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-039. One unbranded women's oversized cotton hoodie with kangaroo pocket in dusty rose, model variation Riva 039. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "040",
+      "file": "040.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-040. One unbranded women's oversized cotton hoodie with kangaroo pocket in white, model variation Trace 040. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "041",
+      "file": "041.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-041. One unbranded women's oversized cotton hoodie with kangaroo pocket in sand beige, model variation Forma 041. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "042",
+      "file": "042.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-042. One unbranded women's oversized cotton hoodie with kangaroo pocket in warm ivory, model variation Haze 042. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "043",
+      "file": "043.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-043. One unbranded women's oversized cotton hoodie with kangaroo pocket in charcoal grey, model variation Arc 043. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "044",
+      "file": "044.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-044. One unbranded women's oversized cotton hoodie with kangaroo pocket in black, model variation Linea 044. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "045",
+      "file": "045.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-045. One unbranded women's oversized cotton hoodie with kangaroo pocket in muted olive green, model variation Flow 045. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "046",
+      "file": "046.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-046. One unbranded women's oversized cotton hoodie with kangaroo pocket in dark chocolate brown, model variation Dune 046. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "047",
+      "file": "047.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-047. One unbranded women's oversized cotton hoodie with kangaroo pocket in deep blue, model variation Tempo 047. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "048",
+      "file": "048.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-048. One unbranded women's oversized cotton hoodie with kangaroo pocket in medium grey, model variation Aster 048. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "049",
+      "file": "049.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-049. One unbranded women's oversized cotton hoodie with kangaroo pocket in dusty rose, model variation Vista 049. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "050",
+      "file": "050.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-050. One unbranded women's oversized cotton hoodie with kangaroo pocket in white, model variation Frame 050. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "051",
+      "file": "051.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-051. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in sand beige, model variation Echo 051. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "052",
+      "file": "052.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-052. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in warm ivory, model variation Orbit 052. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "053",
+      "file": "053.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-053. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in charcoal grey, model variation Muse 053. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "054",
+      "file": "054.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-054. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in black, model variation Silva 054. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "055",
+      "file": "055.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-055. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in muted olive green, model variation Calm 055. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "056",
+      "file": "056.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-056. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in dark chocolate brown, model variation Rise 056. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "057",
+      "file": "057.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-057. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in deep blue, model variation Lino 057. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "058",
+      "file": "058.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-058. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in medium grey, model variation Cove 058. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "059",
+      "file": "059.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-059. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in dusty rose, model variation Riva 059. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "060",
+      "file": "060.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-060. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in white, model variation Trace 060. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "061",
+      "file": "061.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-061. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in sand beige, model variation Forma 061. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "062",
+      "file": "062.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-062. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in warm ivory, model variation Haze 062. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "063",
+      "file": "063.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-063. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in charcoal grey, model variation Arc 063. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "064",
+      "file": "064.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-064. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in black, model variation Linea 064. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "065",
+      "file": "065.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-065. One unbranded women's crew neck cotton sweatshirt with ribbed cuffs in muted olive green, model variation Flow 065. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "066",
+      "file": "066.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-066. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Dune 066. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "067",
+      "file": "067.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-067. One unbranded women's straight leg five pocket denim jeans in black, model variation Tempo 067. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "068",
+      "file": "068.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-068. One unbranded women's straight leg five pocket denim jeans in medium grey, model variation Aster 068. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "069",
+      "file": "069.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-069. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Vista 069. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "070",
+      "file": "070.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-070. One unbranded women's straight leg five pocket denim jeans in black, model variation Frame 070. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "071",
+      "file": "071.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-071. One unbranded women's straight leg five pocket denim jeans in medium grey, model variation Echo 071. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "072",
+      "file": "072.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-072. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Orbit 072. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "073",
+      "file": "073.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-073. One unbranded women's straight leg five pocket denim jeans in black, model variation Muse 073. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "074",
+      "file": "074.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-074. One unbranded women's straight leg five pocket denim jeans in medium grey, model variation Silva 074. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "075",
+      "file": "075.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-075. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Calm 075. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "076",
+      "file": "076.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-076. One unbranded women's straight leg five pocket denim jeans in black, model variation Rise 076. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "077",
+      "file": "077.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-077. One unbranded women's straight leg five pocket denim jeans in medium grey, model variation Lino 077. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "078",
+      "file": "078.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-078. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Cove 078. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "079",
+      "file": "079.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-079. One unbranded women's straight leg five pocket denim jeans in black, model variation Riva 079. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "080",
+      "file": "080.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-080. One unbranded women's straight leg five pocket denim jeans in medium grey, model variation Trace 080. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "081",
+      "file": "081.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-081. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Forma 081. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "082",
+      "file": "082.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-082. One unbranded women's straight leg five pocket denim jeans in black, model variation Haze 082. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "083",
+      "file": "083.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-083. One unbranded women's straight leg five pocket denim jeans in medium grey, model variation Arc 083. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "084",
+      "file": "084.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-084. One unbranded women's straight leg five pocket denim jeans in deep blue, model variation Linea 084. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "085",
+      "file": "085.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-085. One unbranded women's straight leg five pocket denim jeans in black, model variation Flow 085. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "086",
+      "file": "086.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-086. One unbranded women's tailored straight leg trousers with belt loops in dark chocolate brown, model variation Dune 086. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "087",
+      "file": "087.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-087. One unbranded women's tailored straight leg trousers with belt loops in deep blue, model variation Tempo 087. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "088",
+      "file": "088.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-088. One unbranded women's tailored straight leg trousers with belt loops in medium grey, model variation Aster 088. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "089",
+      "file": "089.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-089. One unbranded women's tailored straight leg trousers with belt loops in dusty rose, model variation Vista 089. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "090",
+      "file": "090.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-090. One unbranded women's tailored straight leg trousers with belt loops in white, model variation Frame 090. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "091",
+      "file": "091.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-091. One unbranded women's tailored straight leg trousers with belt loops in sand beige, model variation Echo 091. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "092",
+      "file": "092.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-092. One unbranded women's tailored straight leg trousers with belt loops in warm ivory, model variation Orbit 092. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "093",
+      "file": "093.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-093. One unbranded women's tailored straight leg trousers with belt loops in charcoal grey, model variation Muse 093. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "094",
+      "file": "094.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-094. One unbranded women's tailored straight leg trousers with belt loops in black, model variation Silva 094. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "095",
+      "file": "095.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-095. One unbranded women's tailored straight leg trousers with belt loops in muted olive green, model variation Calm 095. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "096",
+      "file": "096.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-096. One unbranded women's tailored straight leg trousers with belt loops in dark chocolate brown, model variation Rise 096. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "097",
+      "file": "097.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-097. One unbranded women's tailored straight leg trousers with belt loops in deep blue, model variation Lino 097. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "098",
+      "file": "098.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-098. One unbranded women's tailored straight leg trousers with belt loops in medium grey, model variation Cove 098. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "099",
+      "file": "099.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-099. One unbranded women's tailored straight leg trousers with belt loops in dusty rose, model variation Riva 099. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "100",
+      "file": "100.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-100. One unbranded women's tailored straight leg trousers with belt loops in white, model variation Trace 100. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "101",
+      "file": "101.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-101. One unbranded women's tailored straight leg trousers with belt loops in sand beige, model variation Forma 101. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "102",
+      "file": "102.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-102. One unbranded women's tailored straight leg trousers with belt loops in warm ivory, model variation Haze 102. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "103",
+      "file": "103.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-103. One unbranded women's tailored straight leg trousers with belt loops in charcoal grey, model variation Arc 103. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "104",
+      "file": "104.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-104. One unbranded women's tailored straight leg trousers with belt loops in black, model variation Linea 104. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "105",
+      "file": "105.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-105. One unbranded women's tailored straight leg trousers with belt loops in muted olive green, model variation Flow 105. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "106",
+      "file": "106.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-106. One unbranded women's midi dress with short sleeves and defined waist in dark chocolate brown, model variation Dune 106. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "107",
+      "file": "107.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-107. One unbranded women's midi dress with short sleeves and defined waist in deep blue, model variation Tempo 107. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "108",
+      "file": "108.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-108. One unbranded women's midi dress with short sleeves and defined waist in medium grey, model variation Aster 108. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "109",
+      "file": "109.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-109. One unbranded women's midi dress with short sleeves and defined waist in dusty rose, model variation Vista 109. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "110",
+      "file": "110.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-110. One unbranded women's midi dress with short sleeves and defined waist in white, model variation Frame 110. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "111",
+      "file": "111.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-111. One unbranded women's midi dress with short sleeves and defined waist in sand beige, model variation Echo 111. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "112",
+      "file": "112.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-112. One unbranded women's midi dress with short sleeves and defined waist in warm ivory, model variation Orbit 112. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "113",
+      "file": "113.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-113. One unbranded women's midi dress with short sleeves and defined waist in charcoal grey, model variation Muse 113. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "114",
+      "file": "114.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-114. One unbranded women's midi dress with short sleeves and defined waist in black, model variation Silva 114. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "115",
+      "file": "115.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-115. One unbranded women's midi dress with short sleeves and defined waist in muted olive green, model variation Calm 115. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "116",
+      "file": "116.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-116. One unbranded women's midi dress with short sleeves and defined waist in dark chocolate brown, model variation Rise 116. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "117",
+      "file": "117.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-117. One unbranded women's midi dress with short sleeves and defined waist in deep blue, model variation Lino 117. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "118",
+      "file": "118.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-118. One unbranded women's midi dress with short sleeves and defined waist in medium grey, model variation Cove 118. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "119",
+      "file": "119.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-119. One unbranded women's midi dress with short sleeves and defined waist in dusty rose, model variation Riva 119. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "120",
+      "file": "120.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-120. One unbranded women's midi dress with short sleeves and defined waist in white, model variation Trace 120. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "121",
+      "file": "121.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-121. One unbranded women's midi dress with short sleeves and defined waist in sand beige, model variation Forma 121. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "122",
+      "file": "122.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-122. One unbranded women's midi dress with short sleeves and defined waist in warm ivory, model variation Haze 122. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "123",
+      "file": "123.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-123. One unbranded women's midi dress with short sleeves and defined waist in charcoal grey, model variation Arc 123. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "124",
+      "file": "124.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-124. One unbranded women's midi dress with short sleeves and defined waist in black, model variation Linea 124. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "125",
+      "file": "125.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-125. One unbranded women's midi dress with short sleeves and defined waist in muted olive green, model variation Flow 125. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "126",
+      "file": "126.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-126. One unbranded women's a-line midi skirt with a neat waistband in dark chocolate brown, model variation Dune 126. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "127",
+      "file": "127.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-127. One unbranded women's a-line midi skirt with a neat waistband in deep blue, model variation Tempo 127. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "128",
+      "file": "128.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-128. One unbranded women's a-line midi skirt with a neat waistband in medium grey, model variation Aster 128. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "129",
+      "file": "129.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-129. One unbranded women's a-line midi skirt with a neat waistband in dusty rose, model variation Vista 129. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "130",
+      "file": "130.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-130. One unbranded women's a-line midi skirt with a neat waistband in white, model variation Frame 130. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "131",
+      "file": "131.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-131. One unbranded women's a-line midi skirt with a neat waistband in sand beige, model variation Echo 131. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "132",
+      "file": "132.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-132. One unbranded women's a-line midi skirt with a neat waistband in warm ivory, model variation Orbit 132. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "133",
+      "file": "133.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-133. One unbranded women's a-line midi skirt with a neat waistband in charcoal grey, model variation Muse 133. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "134",
+      "file": "134.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-134. One unbranded women's a-line midi skirt with a neat waistband in black, model variation Silva 134. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "135",
+      "file": "135.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-135. One unbranded women's a-line midi skirt with a neat waistband in muted olive green, model variation Calm 135. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотная вискоза texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "136",
+      "file": "136.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-136. One unbranded women's two piece matching tailored blazer and trousers suit in dark chocolate brown, model variation Rise 136. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "137",
+      "file": "137.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-137. One unbranded women's two piece matching tailored blazer and trousers suit in deep blue, model variation Lino 137. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "138",
+      "file": "138.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-138. One unbranded women's two piece matching tailored blazer and trousers suit in medium grey, model variation Cove 138. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "139",
+      "file": "139.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-139. One unbranded women's two piece matching tailored blazer and trousers suit in dusty rose, model variation Riva 139. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "140",
+      "file": "140.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-140. One unbranded women's two piece matching tailored blazer and trousers suit in white, model variation Trace 140. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "141",
+      "file": "141.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-141. One unbranded women's long wool blend single breasted coat with notch lapels in sand beige, model variation Forma 141. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "142",
+      "file": "142.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-142. One unbranded women's long wool blend single breasted coat with notch lapels in warm ivory, model variation Haze 142. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "143",
+      "file": "143.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-143. One unbranded women's long wool blend single breasted coat with notch lapels in charcoal grey, model variation Arc 143. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "144",
+      "file": "144.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-144. One unbranded women's long wool blend single breasted coat with notch lapels in black, model variation Linea 144. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "145",
+      "file": "145.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-145. One unbranded women's long wool blend single breasted coat with notch lapels in muted olive green, model variation Flow 145. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "146",
+      "file": "146.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-146. One unbranded women's long wool blend single breasted coat with notch lapels in dark chocolate brown, model variation Dune 146. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "147",
+      "file": "147.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-147. One unbranded women's long wool blend single breasted coat with notch lapels in deep blue, model variation Tempo 147. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "148",
+      "file": "148.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-148. One unbranded women's long wool blend single breasted coat with notch lapels in medium grey, model variation Aster 148. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "149",
+      "file": "149.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-149. One unbranded women's long wool blend single breasted coat with notch lapels in dusty rose, model variation Vista 149. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "150",
+      "file": "150.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-150. One unbranded women's long wool blend single breasted coat with notch lapels in white, model variation Frame 150. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "151",
+      "file": "151.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-151. One unbranded women's pair of minimalist mesh and leather low top sneakers in sand beige, model variation Echo 151. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "152",
+      "file": "152.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-152. One unbranded women's pair of minimalist mesh and leather low top sneakers in warm ivory, model variation Orbit 152. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "153",
+      "file": "153.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-153. One unbranded women's pair of minimalist mesh and leather low top sneakers in charcoal grey, model variation Muse 153. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "154",
+      "file": "154.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-154. One unbranded women's pair of minimalist mesh and leather low top sneakers in black, model variation Silva 154. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "155",
+      "file": "155.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-155. One unbranded women's pair of minimalist mesh and leather low top sneakers in muted olive green, model variation Calm 155. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "156",
+      "file": "156.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-156. One unbranded women's pair of minimalist mesh and leather low top sneakers in dark chocolate brown, model variation Rise 156. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "157",
+      "file": "157.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-157. One unbranded women's pair of minimalist mesh and leather low top sneakers in deep blue, model variation Lino 157. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "158",
+      "file": "158.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-158. One unbranded women's pair of minimalist mesh and leather low top sneakers in medium grey, model variation Cove 158. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "159",
+      "file": "159.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-159. One unbranded women's pair of minimalist mesh and leather low top sneakers in dusty rose, model variation Riva 159. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "160",
+      "file": "160.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-160. One unbranded women's pair of minimalist mesh and leather low top sneakers in white, model variation Trace 160. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "161",
+      "file": "161.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-161. One unbranded women's pair of minimalist mesh and leather low top sneakers in sand beige, model variation Forma 161. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "162",
+      "file": "162.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-162. One unbranded women's pair of minimalist mesh and leather low top sneakers in warm ivory, model variation Haze 162. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "163",
+      "file": "163.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-163. One unbranded women's pair of minimalist mesh and leather low top sneakers in charcoal grey, model variation Arc 163. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "164",
+      "file": "164.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-164. One unbranded women's pair of minimalist mesh and leather low top sneakers in black, model variation Linea 164. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "166",
+      "file": "166.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-166. One unbranded women's pair of minimalist mesh and leather low top sneakers in dark chocolate brown, model variation Dune 166. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "167",
+      "file": "167.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-167. One unbranded women's pair of minimalist mesh and leather low top sneakers in deep blue, model variation Tempo 167. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "168",
+      "file": "168.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-168. One unbranded women's pair of minimalist mesh and leather low top sneakers in medium grey, model variation Aster 168. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "181",
+      "file": "181.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-181. One unbranded women's pair of low top canvas sneakers with white rubber soles in sand beige, model variation Forma 181. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый канвас texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "201",
+      "file": "201.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-201. One unbranded women's pair of leather lace up ankle boots with chunky sole in sand beige, model variation Forma 201. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "221",
+      "file": "221.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-221. One unbranded women's pair of elegant leather pointed toe pumps with moderate block heel in sand beige, model variation Forma 221. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "236",
+      "file": "236.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-236. One unbranded women's pair of knee high leather boots with low block heels in dark chocolate brown, model variation Rise 236. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "251",
+      "file": "251.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-251. One unbranded men's short sleeve cotton crew neck t-shirt in sand beige, model variation Echo 251. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый джерси texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "281",
+      "file": "281.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-281. One unbranded men's long sleeve button front cotton shirt in sand beige, model variation Forma 281. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый поплин texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "301",
+      "file": "301.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-301. One unbranded men's oversized cotton hoodie with kangaroo pocket in sand beige, model variation Forma 301. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "321",
+      "file": "321.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-321. One unbranded men's crew neck cotton sweatshirt with ribbed cuffs in sand beige, model variation Forma 321. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Мягкий футер texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "336",
+      "file": "336.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-336. One unbranded men's straight leg five pocket denim jeans in deep blue, model variation Rise 336. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый деним texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "356",
+      "file": "356.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-356. One unbranded men's tailored straight leg trousers with belt loops in dark chocolate brown, model variation Rise 356. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "376",
+      "file": "376.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-376. One unbranded men's two piece matching tailored blazer and trousers suit in dark chocolate brown, model variation Rise 376. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Костюмная ткань texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "381",
+      "file": "381.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-381. One unbranded men's cotton jacket with buttons and patch pockets in sand beige, model variation Forma 381. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Плотный хлопок texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "391",
+      "file": "391.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-391. One unbranded men's long wool blend single breasted coat with notch lapels in sand beige, model variation Echo 391. Entire garment visible, front view ghost mannequin product photography, no human. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Смесовая шерсть texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "401",
+      "file": "401.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-401. One unbranded men's pair of minimalist mesh and leather low top sneakers in sand beige, model variation Forma 401. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Текстиль и искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "436",
+      "file": "436.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-436. One unbranded men's pair of low top canvas sneakers with white rubber soles in dark chocolate brown, model variation Rise 436. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Хлопковый канвас texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "461",
+      "file": "461.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-461. One unbranded men's pair of leather lace up ankle boots with chunky sole in sand beige, model variation Forma 461. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    },
+    {
+      "serial": "486",
+      "file": "486.jpg",
+      "prompt": "Use case: product-mockup. Asset type: unique fashion ecommerce product photograph, demo SKU WEA-486. One unbranded men's pair of classic leather derby dress shoes with low heel in dark chocolate brown, model variation Dune 486. A complete matching pair of shoes, three quarter product view. Consistent warm off-white seamless studio background, soft diffused lighting, subtle natural shadow, crisp realistic Искусственная кожа texture, high end ecommerce catalog photography. Portrait 3:4 framing, subject centered with generous margin, correct proportions. No text, brand logos, watermarks, extra objects, collage or decorations."
+    }
+  ]
+}
