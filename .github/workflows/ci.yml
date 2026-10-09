@@ -1,0 +1,57 @@
+name: WEARO checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: test-only-password
+          POSTGRES_DB: wearo_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d wearo_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:test-only-password@127.0.0.1:5432/wearo_test
+      TEST_DATABASE_URL: postgresql://postgres:test-only-password@127.0.0.1:5432/wearo_test
+      APP_URL: http://localhost:3000
+      DEV_AUTH: "true"
+      TEST_PAYMENTS: "true"
+      DEMO_SEED: "true"
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run db:generate
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run test:integration
+      - run: npm run db:migrate
+      - run: npm run db:seed
+      - run: npm run build
+      - run: npm run test:production
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - run: npm audit --audit-level=high
+      - run: docker build -t wearo-ci .
+      - name: Verify Docker healthcheck
+        run: |
+          docker run -d --name wearo-ci --network host -e DATABASE_URL -e APP_URL=https://smoke.wearo.invalid -e TELEGRAM_BOT_TOKEN=smoke-only-token -e DEV_AUTH=false -e TEST_PAYMENTS=false wearo-ci
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent http://127.0.0.1:3000/api/health; then docker stop wearo-ci; exit 0; fi
+            sleep 2
+          done
+          docker logs wearo-ci
+          exit 1

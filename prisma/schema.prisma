@@ -195,7 +195,7 @@ model ProductVariant {
   id         String      @id @default(cuid())
   productId  String
   product    Product     @relation(fields: [productId], references: [id])
-  sku        String      @unique
+  sku        String
   size       String
   color      String
   active     Boolean     @default(true)
@@ -204,6 +204,7 @@ model ProductVariant {
   orderItems OrderItem[]
 
   @@unique([productId, size, color])
+  @@unique([productId, sku])
 }
 
 model ProductImage {

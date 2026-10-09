@@ -7,9 +7,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build --webpack",
+    "build": "prisma generate && next build --webpack && node scripts/sanitize-build.mjs",
     "start": "next start -H 0.0.0.0",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:integration": "tsx scripts/integration.ts",
     "db:generate": "prisma generate",
@@ -17,7 +17,10 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:local": "tsx scripts/local-db.ts",
     "admin:bootstrap": "tsx scripts/bootstrap-admin.ts",
-    "bot:configure": "tsx scripts/configure-bot.ts"
+    "bot:configure": "tsx scripts/configure-bot.ts",
+    "test:e2e": "playwright test",
+    "test:production": "node scripts/smoke-production.mjs",
+    "format": "prettier --write src scripts tests prisma/seed.ts *.ts *.mjs *.json .github/workflows/*.yml README.md docs/*.md"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -28,9 +31,11 @@
     "@twa-dev/sdk": "^8.0.2",
     "lucide-react": "^1.54.0",
     "next": "^16.4.0",
+    "prisma": "^6.19.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
     "zod": "^4.6.5"
   },
   "devDependencies": {
@@ -40,9 +45,8 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "embedded-postgres": "^18.4.0-beta.17",
-    "prisma": "^6.19.3",
+    "prettier": "^3.9.9",
     "tailwindcss": "^4.3.3",
-    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vitest": "^5.0.3"
   },
