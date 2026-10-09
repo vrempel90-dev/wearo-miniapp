@@ -101,6 +101,8 @@ export async function saveProduct(
       title: data.title,
       description: data.description,
       priceMinor: data.priceMinor,
+      oldPriceMinor: null,
+      discountPercent: null,
       categoryId: data.categoryId,
       brandId: brand?.id ?? null,
       status: "PENDING" as const,
@@ -113,14 +115,12 @@ export async function saveProduct(
             ...fields,
             sellerId,
             variants: {
-              create: productInput
-                .parse(input)
-                .variants.map((v) => ({
-                  sku: v.sku,
-                  size: v.size,
-                  color: v.color,
-                  inventory: { create: { available: v.available } },
-                })),
+              create: productInput.parse(input).variants.map((v) => ({
+                sku: v.sku,
+                size: v.size,
+                color: v.color,
+                inventory: { create: { available: v.available } },
+              })),
             },
           },
         });

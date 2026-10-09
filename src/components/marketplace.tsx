@@ -24,6 +24,9 @@ type Seller = {
   description: string;
   status: string;
   commissionBps: number;
+  logoUrl?: string | null;
+  demoDataset?: string | null;
+  _count?: { products: number };
 };
 type Category = {
   id: string;
@@ -44,6 +47,10 @@ type Product = {
   title: string;
   description: string;
   priceMinor: number;
+  oldPriceMinor?: number | null;
+  discountPercent?: number | null;
+  demoDataset?: string | null;
+  styleTag?: string | null;
   status: string;
   categoryId: string;
   brand?: { name: string } | null;
@@ -216,14 +223,30 @@ export function Action({
   );
 }
 export function ProductCard({ product: p }: { product: Product }) {
+  const [chosen, setChosen] = useState("");
+  const [failedImage, setFailedImage] = useState(false);
+  const available = p.variants.filter((v) => v.inventory.available > 0);
   return (
     <article className="product-card">
       <Link href={`/product/${p.id}`}>
         <div className="product-photo">
-          {p.images[0] ? (
-            <img src={p.images[0].url} alt={p.title} loading="lazy" />
+          {p.images[0] && !failedImage ? (
+            <img
+              src={p.images[0].url}
+              alt={p.title}
+              loading="lazy"
+              width="900"
+              height="1200"
+              onError={() => setFailedImage(true)}
+            />
           ) : (
-            <Shirt size={62} strokeWidth={0.7} />
+            <div className="missing-photo">
+              <Shirt size={62} strokeWidth={0.7} />
+              <small>Фото ещё не добавлено</small>
+            </div>
+          )}
+          {p.discountPercent && (
+            <span className="discount-tag">−{p.discountPercent}% · демо</span>
           )}
           <span className="photo-tag">
             {p.brand?.name || "Независимый бренд"}
@@ -234,13 +257,53 @@ export function ProductCard({ product: p }: { product: Product }) {
         </div>
         <p className="eyebrow">{p.seller.name}</p>
         <h3>{p.title}</h3>
-        <p>{money(p.priceMinor)}</p>
+        <p className="product-price">
+          {money(p.priceMinor)}{" "}
+          {p.oldPriceMinor && <del>{money(p.oldPriceMinor)}</del>}
+        </p>
       </Link>
+      <p className="available-sizes">
+        Размеры:{" "}
+        {[...new Set(available.map((v) => v.size))].join(" · ") ||
+          "Нет в наличии"}
+      </p>
+      <select
+        aria-label={`Размер и цвет: ${p.title}`}
+        value={chosen}
+        onChange={(e) => setChosen(e.target.value)}
+      >
+        <option value="">Размер / цвет</option>
+        {available.map((v) => (
+          <option key={v.id} value={v.id}>
+            {v.size} / {v.color}
+          </option>
+        ))}
+      </select>
+      {chosen ? (
+        <Action
+          className="button card-cart"
+          run={async () => {
+            const basket = await api<{
+              items: { quantity: number; variant: { id: string } }[];
+            }>("cart");
+            const quantity =
+              (basket.items.find((i) => i.variant.id === chosen)?.quantity ??
+                0) + 1;
+            return api("cart", "POST", { variantId: chosen, quantity });
+          }}
+        >
+          В корзину <ShoppingBag size={15} />
+        </Action>
+      ) : (
+        <button className="card-cart choose-size" disabled>
+          Выберите размер
+        </button>
+      )}
     </article>
   );
 }
 function Catalog() {
-  const [gender, setGender] = useState("WOMEN");
+  const [gender, setGender] = useState("");
   const [q, setQ] = useState("");
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("newest");
@@ -253,14 +316,20 @@ function Catalog() {
   const [min, setMin] = useState("");
   const [max, setMax] = useState("");
   const [page, setPage] = useState(1);
+  const [style, setStyle] = useState("");
+  const [sale, setSale] = useState(false);
+  const [photographed, setPhotographed] = useState(false);
   const query = new URLSearchParams({
-    gender,
     q: search,
     sort,
     page: String(page),
   });
   for (const [k, v] of Object.entries({
     category,
+    gender,
+    style,
+    sale: sale ? "true" : "",
+    photographed: photographed ? "true" : "",
     seller,
     size,
     color,
@@ -274,15 +343,26 @@ function Catalog() {
   );
   const categories = useData<Category[]>("categories");
   const stores = useData<Seller[]>("stores");
-  const newest = useData<{ products: Product[] }>(
-    `catalog?gender=${gender}&sort=newest`,
-  );
-  const popular = useData<{ products: Product[] }>(
-    `catalog?gender=${gender}&sort=popular`,
-  );
+  const curated = useData<Record<string, Product[]>>("showcase");
+  const demo = useData<{
+    products: number;
+    sellers: number;
+    photographed: number;
+    missingPhotos: number;
+  }>("demo-status");
   return (
     <>
       <div className="gender-tabs">
+        <button
+          className={!gender ? "selected" : ""}
+          onClick={() => {
+            setGender("");
+            setCategory("");
+            setPage(1);
+          }}
+        >
+          Все
+        </button>
         <button
           className={gender === "WOMEN" ? "selected" : ""}
           onClick={() => {
@@ -313,7 +393,7 @@ function Catalog() {
             <i>Твой выбор.</i>
           </h1>
           <p>
-            Независимые магазины Казахстана.
+            Вымышленные магазины. Настоящий выбор стиля.
             <br />
             Новые сочетания каждый день.
           </p>
@@ -321,19 +401,126 @@ function Catalog() {
             Смотреть коллекцию <ArrowUpRight size={18} />
           </a>
         </div>
-        <div className="hero-art" aria-hidden="true">
-          <span className="art-circle" />
-          <span className="art-fabric" />
-          <span className="art-card">
-            W<br />
-            <small>СОБРАНО ПО-ТВОЕМУ</small>
-          </span>
-          <span className="art-caption">STYLE IS PERSONAL.</span>
+        <div className="hero-art hero-product" aria-hidden="true">
+          <img src="/demo/products/001.jpg" alt="" />
+          <span className="art-caption">THE EVERYDAY EDIT / DEMO</span>
+        </div>
+      </section>
+      {demo.data && (
+        <div className="catalog-summary">
+          <strong>
+            {demo.data.products} товаров · {demo.data.sellers} магазинов
+          </strong>
+          <span>Цены и остатки вымышлены</span>
+          {demo.data.missingPhotos > 0 && (
+            <span className="photo-progress">
+              Фотографии: {demo.data.photographed} из {demo.data.products}.
+              Визуальное наполнение ещё не завершено.
+            </span>
+          )}
+        </div>
+      )}
+      <div className="showcase-sections">
+        {[
+          ["newest", "Новые поступления"],
+          ["women", "Женская коллекция"],
+          ["men", "Мужская коллекция"],
+          ["shoes", "Популярная обувь"],
+          ["sale", "Товары со скидками"],
+        ].map(([key, title]) => (
+          <section key={key}>
+            <div className="section-heading">
+              <div>
+                <span className="eyebrow">
+                  {key === "shoes"
+                    ? "ДЕМОНСТРАЦИОННАЯ ПОДБОРКА / БЕЗ СТАТИСТИКИ ПРОДАЖ"
+                    : "WEARO SELECT / DEMO"}
+                </span>
+                <h2>{title}</h2>
+              </div>
+              <button
+                className="text-button"
+                onClick={() => {
+                  setGender(
+                    key === "women" ? "WOMEN" : key === "men" ? "MEN" : "",
+                  );
+                  setCategory("");
+                  setSeller("");
+                  setSale(key === "sale");
+                  setStyle("");
+                  setPage(1);
+                  document
+                    .getElementById("catalog")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                В каталог <ArrowUpRight size={17} />
+              </button>
+            </div>
+            <div className="product-grid">
+              {curated.data?.[key]?.map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
+            </div>
+            <State
+              loading={curated.loading}
+              error={curated.error}
+              empty={curated.data?.[key]?.length === 0}
+            />
+          </section>
+        ))}
+      </div>
+      <section className="style-section">
+        <div className="section-heading">
+          <h2>Подборки по стилю</h2>
+          <span className="eyebrow">СОБЕРИ СВОЙ ГАРДЕРОБ</span>
+        </div>
+        <div className="style-grid">
+          {[
+            [
+              "minimal",
+              "Чистые линии",
+              "Спокойная база для каждого дня",
+              "011",
+            ],
+            [
+              "denim",
+              "Деним и город",
+              "Свободные формы, знакомая фактура",
+              "066",
+            ],
+            ["elegant", "Особый момент", "Силуэты с мягким характером", "106"],
+            ["street", "Ритм улиц", "Объём и повседневный комфорт", "036"],
+          ].map(([value, title, text, image]) => (
+            <button
+              key={value}
+              className={`style-card style-${value}`}
+              onClick={() => {
+                setStyle(value);
+                setGender("");
+                setCategory("");
+                setSeller("");
+                setSale(false);
+                setPage(1);
+                document
+                  .getElementById("catalog")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              <img src={`/demo/products/${image}.jpg`} alt="" loading="lazy" />
+              <div>
+                <span className="eyebrow">STYLE EDIT / DEMO</span>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
+              <ArrowUpRight />
+            </button>
+          ))}
         </div>
       </section>
       <div className="category-row">
         {categories.data
-          ?.filter((c) => c.gender === gender && !c.parentId)
+          ?.filter((c) => (!gender || c.gender === gender) && !c.parentId)
           .map((c) => (
             <button
               className={category === c.id ? "selected" : ""}
@@ -343,6 +530,9 @@ function Catalog() {
                 setPage(1);
               }}
             >
+              {!gender
+                ? `${c.gender === "WOMEN" ? "Женская" : "Мужская"} `
+                : ""}
               {c.name}
               <ArrowUpRight size={17} />
             </button>
@@ -352,7 +542,12 @@ function Catalog() {
         <div className="section-heading">
           <div>
             <span className="eyebrow">ГАРДЕРОБ БЕЗ ГРАНИЦ</span>
-            <h2>Каталог</h2>
+            <h2>
+              Каталог{" "}
+              <small className="catalog-count">
+                {products.data?.total ?? "…"}
+              </small>
+            </h2>
           </div>
           <button className="text-button" onClick={() => setFilters(!filters)}>
             <SlidersHorizontal size={16} /> Фильтры
@@ -385,7 +580,7 @@ function Catalog() {
             }}
           >
             <option value="newest">Сначала новинки</option>
-            <option value="popular">Популярные</option>
+            <option value="popular">По добавлениям в избранное</option>
             <option value="price_asc">Цена по возрастанию</option>
             <option value="price_desc">Цена по убыванию</option>
           </select>
@@ -418,10 +613,10 @@ function Catalog() {
               >
                 <option value="">Все категории</option>
                 {categories.data
-                  ?.filter((c) => c.gender === gender)
+                  ?.filter((c) => !gender || c.gender === gender)
                   .map((c) => (
                     <option value={c.id} key={c.id}>
-                      {c.name}
+                      {c.gender === "WOMEN" ? "Ж" : "М"} / {c.name}
                     </option>
                   ))}
               </select>
@@ -443,6 +638,62 @@ function Catalog() {
                 />
               </Field>
             ))}
+            <Field label="Стиль">
+              <select
+                value={style}
+                onChange={(e) => {
+                  setStyle(e.target.value);
+                  setPage(1);
+                }}
+              >
+                <option value="">Все стили</option>
+                <option value="minimal">Минимализм</option>
+                <option value="street">Уличный</option>
+                <option value="denim">Деним</option>
+                <option value="sport">Спортивный</option>
+                <option value="elegant">Элегантный</option>
+              </select>
+            </Field>
+            <label className="check-filter">
+              <input
+                type="checkbox"
+                checked={sale}
+                onChange={(e) => {
+                  setSale(e.target.checked);
+                  setPage(1);
+                }}
+              />
+              Со скидкой
+            </label>
+            <label className="check-filter">
+              <input
+                type="checkbox"
+                checked={photographed}
+                onChange={(e) => {
+                  setPhotographed(e.target.checked);
+                  setPage(1);
+                }}
+              />
+              Только с фото
+            </label>
+            <button
+              className="text-button"
+              onClick={() => {
+                setSeller("");
+                setCategory("");
+                setSize("");
+                setColor("");
+                setBrand("");
+                setMin("");
+                setMax("");
+                setStyle("");
+                setSale(false);
+                setPhotographed(false);
+                setPage(1);
+              }}
+            >
+              Сбросить фильтры
+            </button>
           </div>
         )}
         <State
@@ -472,27 +723,9 @@ function Catalog() {
           </div>
         )}
       </section>
-      {[
-        ["Новинки", newest],
-        ["Популярные товары", popular],
-      ].map(([title, result]) => (
-        <section key={title as string}>
-          <div className="section-heading">
-            <h2>{title as string}</h2>
-          </div>
-          <div className="product-grid">
-            {(result as typeof newest).data?.products.slice(0, 4).map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
-          <State
-            empty={(result as typeof newest).data?.products.length === 0}
-          />
-        </section>
-      ))}
       <section>
         <div className="section-heading">
-          <h2>Магазины на платформе</h2>
+          <h2>Рекомендуемые магазины</h2>
           <span className="eyebrow">НЕЗАВИСИМЫЕ. РАЗНЫЕ. ТВОИ.</span>
         </div>
         <State
@@ -502,23 +735,24 @@ function Catalog() {
         />
         <div className="store-grid">
           {stores.data?.map((s) => (
-            <button
-              className="store-card"
-              key={s.id}
-              onClick={() => {
-                setSeller(s.id);
-                document
-                  .getElementById("catalog")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              <span className="store-letter">{s.name[0]}</span>
+            <Link className="store-card" key={s.id} href={`/store/${s.id}`}>
+              {s.logoUrl ? (
+                <img
+                  className="store-logo"
+                  src={s.logoUrl}
+                  alt={`Логотип ${s.name}`}
+                  loading="lazy"
+                />
+              ) : (
+                <span className="store-letter">{s.name[0]}</span>
+              )}
               <h3>{s.name}</h3>
               <p>
-                {s.city} · {s.description}
+                {s.city} · {s._count?.products ?? 0} товаров
+                {s.demoDataset && " · Вымышленный магазин"}
               </p>
               <ArrowUpRight size={20} />
-            </button>
+            </Link>
           ))}
         </div>
       </section>
@@ -544,7 +778,21 @@ function ProductDetail({ id }: { id: string }) {
           {p.seller.name} / {p.brand?.name || "WEARO SELECT"}
         </p>
         <h1>{p.title}</h1>
-        <h2>{money(p.priceMinor)}</h2>
+        <h2 className="product-price">
+          {money(p.priceMinor)}{" "}
+          {p.oldPriceMinor && <del>{money(p.oldPriceMinor)}</del>}
+        </h2>
+        {p.discountPercent && (
+          <p className="badge">Демонстрационная скидка {p.discountPercent}%</p>
+        )}
+        {p.demoDataset && (
+          <p className="notice">
+            Демонстрационный товар.{" "}
+            {p.images.length
+              ? "Фото сгенерировано; основной цвет показан на снимке."
+              : "Фотография ещё не добавлена."}
+          </p>
+        )}
         <p>{p.description}</p>
         <div className="variant-list">
           {p.variants.map((v) => (
@@ -556,7 +804,9 @@ function ProductDetail({ id }: { id: string }) {
             >
               {v.size} / {v.color}
               <small>
-                {v.inventory.available > 0 ? "В наличии" : "Нет в наличии"}
+                {v.inventory.available > 0
+                  ? `${p.demoDataset ? "Демо-остаток" : "В наличии"}: ${v.inventory.available}`
+                  : "Нет в наличии"}
               </small>
             </button>
           ))}
@@ -575,9 +825,78 @@ function ProductDetail({ id }: { id: string }) {
           <Heart size={17} /> В избранное
         </Action>
         <p className="muted">
-          Продажа и исполнение заказа: {p.seller.name}, {p.seller.city}.
+          {p.demoDataset
+            ? "Вымышленный продавец; тестовый заказ без доставки"
+            : "Продажа и исполнение заказа"}
+          : <Link href={`/store/${p.seller.id}`}>{p.seller.name}</Link>,{" "}
+          {p.seller.city}.
         </p>
       </div>
+    </section>
+  );
+}
+function Storefront({ id }: { id: string }) {
+  const stores = useData<Seller[]>(`stores/${id}`);
+  const [page, setPage] = useState(1);
+  const products = useData<{ products: Product[]; total: number }>(
+    `catalog?seller=${id}&page=${page}`,
+  );
+  const s = stores.data?.[0];
+  if (!s)
+    return (
+      <State
+        loading={stores.loading}
+        error={stores.error}
+        empty={!!stores.data}
+      />
+    );
+  return (
+    <section>
+      <div className="store-profile">
+        {s.logoUrl && (
+          <img
+            className="store-logo"
+            src={s.logoUrl}
+            alt={`Логотип ${s.name}`}
+          />
+        )}
+        <div>
+          <span className="eyebrow">
+            {s.demoDataset ? "ВЫМЫШЛЕННЫЙ МАГАЗИН / DEMO" : "МАГАЗИН НА WEARO"}
+          </span>
+          <h1>{s.name}</h1>
+          <p>{s.description}</p>
+          <p>
+            {s.city} · {s._count?.products} товаров
+          </p>
+        </div>
+      </div>
+      <State
+        loading={products.loading}
+        error={products.error}
+        empty={products.data?.total === 0}
+      />
+      <div className="product-grid">
+        {products.data?.products.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
+      </div>
+      {(products.data?.total ?? 0) > 24 && (
+        <div className="pagination">
+          <button disabled={page === 1} onClick={() => setPage(page - 1)}>
+            Назад
+          </button>
+          <span>
+            {page} / {Math.ceil((products.data?.total ?? 0) / 24)}
+          </span>
+          <button
+            disabled={page * 24 >= (products.data?.total ?? 0)}
+            onClick={() => setPage(page + 1)}
+          >
+            Далее
+          </button>
+        </div>
+      )}
     </section>
   );
 }
@@ -1138,6 +1457,7 @@ function Favorites() {
   );
 }
 export default function Marketplace() {
+  const demo = useData<{ enabled: boolean }>("demo-status");
   const pathname = usePathname();
   const router = useRouter();
   const session = useData<Session>("session");
@@ -1210,6 +1530,8 @@ export default function Marketplace() {
       <Catalog />
     ) : pathname.startsWith("/product/") ? (
       <ProductDetail id={pathname.split("/")[2]} />
+    ) : pathname.startsWith("/store/") ? (
+      <Storefront id={pathname.split("/")[2]} />
     ) : pathname === "/account" ? (
       session.data ? (
         <Account session={session.data} reload={session.reload} />
@@ -1230,7 +1552,9 @@ export default function Marketplace() {
   return (
     <>
       <div className="top-note">
-        Казахстан / независимые магазины / цены в ₸
+        {demo.data?.enabled
+          ? "Демонстрационный каталог — заказы и оплата тестовые"
+          : "Казахстан / независимые магазины / цены в ₸"}
       </div>
       <header>
         <Link href="/" className="logo">
@@ -1441,10 +1765,15 @@ function Cart() {
       ))}
       {!!d?.items.length && (
         <div className="panel">
-          <h2>Доставка и оформление</h2>
+          <h2>
+            {d.items.some((i) => i.variant.product.demoDataset)
+              ? "Тестовое оформление"
+              : "Доставка и оформление"}
+          </h2>
           <p className="muted">
-            Каждый магазин получит отдельный заказ. Указана стоимость товаров;
-            доставка согласуется с продавцом.
+            {d.items.some((i) => i.variant.product.demoDataset)
+              ? "Каждый вымышленный магазин получит отдельный тестовый заказ. Доставка и денежные операции не выполняются. Используйте вымышленные контактные данные."
+              : "Каждый магазин получит отдельный заказ. Указана стоимость товаров; доставка согласуется с продавцом."}
           </p>
           <form
             className="form-grid"
@@ -1497,7 +1826,11 @@ function Cart() {
                 className="button"
                 disabled={busy || d.items.some((i) => !i.available)}
               >
-                {busy ? "Оформление…" : "Создать заказы"}
+                {busy
+                  ? "Оформление…"
+                  : d.items.some((i) => i.variant.product.demoDataset)
+                    ? "Создать тестовые заказы"
+                    : "Создать заказы"}
               </button>
               <p className="muted">
                 Приём реальных платежей отключён. Тестовая оплата доступна

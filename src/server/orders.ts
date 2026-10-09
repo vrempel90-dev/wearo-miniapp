@@ -62,6 +62,11 @@ export async function checkout(user: User, input: unknown) {
       const v = item.variant,
         p = v.product;
       assert(
+        !p.demoDataset || testPaymentsEnabled(),
+        503,
+        "Демонстрационные товары оформляются только в разрешённом тестовом режиме",
+      );
+      assert(
         v.active && p.status === "APPROVED" && p.seller.status === "ACTIVE",
         409,
         `Товар ${p.title} недоступен`,

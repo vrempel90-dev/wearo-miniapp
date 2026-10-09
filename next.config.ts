@@ -3,6 +3,7 @@ const config: NextConfig = {
   output: "standalone",
   outputFileTracingRoot: process.cwd(),
   poweredByHeader: false,
+  devIndicators: false,
   async headers() {
     return [
       {

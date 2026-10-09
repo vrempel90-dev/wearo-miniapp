@@ -11,7 +11,7 @@ import {
   digest,
 } from "@/server/auth";
 import { developmentEnabled, validateProduction } from "@/server/config";
-import { catalog, publicProduct } from "@/server/catalog";
+import { catalog, publicProduct, demoStatus, showcase } from "@/server/catalog";
 import {
   addVariant,
   applySeller,
@@ -47,6 +47,8 @@ async function route(
     const p = (await params).path;
     const method = req.method;
     const url = new URL(req.url);
+    if (method === "GET" && p[0] === "demo-status") return demoStatus();
+    if (method === "GET" && p[0] === "showcase") return showcase();
     if (method === "GET" && p[0] === "catalog")
       return catalog(url.searchParams);
     if (method === "GET" && p[0] === "products" && p.length === 2)
@@ -55,13 +57,16 @@ async function route(
       return db.category.findMany({ orderBy: { name: "asc" } });
     if (method === "GET" && p[0] === "stores")
       return db.seller.findMany({
-        where: { status: "ACTIVE" },
+        where: { status: "ACTIVE", ...(p[1] ? { id: p[1] } : {}) },
         select: {
           id: true,
           name: true,
           slug: true,
           description: true,
           city: true,
+          logoUrl: true,
+          demoDataset: true,
+          _count: { select: { products: { where: { status: "APPROVED" } } } },
         },
       });
     if (method === "GET" && p[0] === "session") {
@@ -79,8 +84,15 @@ async function route(
     }
     if (method === "GET" && p[0] === "dev-users" && developmentEnabled())
       return db.user.findMany({
-        where: { telegramId: { lt: 0 } },
+        where: {
+          telegramId: { lt: 0 },
+          OR: [
+            { telegramId: { in: [-900n, -901n] } },
+            { memberships: { some: { seller: { status: "ACTIVE" } } } },
+          ],
+        },
         select: { id: true, displayName: true, role: true },
+        orderBy: [{ role: "asc" }, { displayName: "asc" }],
       });
     if (method === "POST" && p[0] === "auth") {
       await rateLimit(`auth:global`, 200);
