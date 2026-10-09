@@ -53,6 +53,11 @@ try {
   assert.equal((await fetch(base)).status, 200);
   assert.equal((await fetch(`${base}/favicon.svg`)).status, 200);
   console.log("PASS standalone page and static assets");
+  const photo = await fetch(`${base}/demo/products/001.jpg`);
+  assert.equal(photo.status, 200);
+  assert.ok(photo.headers.get("content-type").includes("image/jpeg"));
+  assert.ok((await photo.arrayBuffer()).byteLength > 10000);
+  console.log("PASS generated catalog photo served by production standalone");
   assert.equal(
     (
       await fetch(`${base}/api/auth/dev`, {

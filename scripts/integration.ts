@@ -419,6 +419,71 @@ try {
     assert.equal(u.telegramId, 450000000001n);
     await assert.rejects(() => telegramLogin(p.toString()));
   });
+  await check(
+    "database rejects inconsistent old price and accepts an exact discount",
+    async () => {
+      await assert.rejects(() =>
+        db.product.update({
+          where: { id: jacket.id },
+          data: { oldPriceMinor: 4000000, discountPercent: 25 },
+        }),
+      );
+      await db.product.update({
+        where: { id: jacket.id },
+        data: {
+          priceMinor: 3000000,
+          oldPriceMinor: 4000000,
+          discountPercent: 25,
+        },
+      });
+      const product = await db.product.findUniqueOrThrow({
+        where: { id: jacket.id },
+      });
+      assert.equal(
+        product.priceMinor * 100,
+        product.oldPriceMinor! * (100 - product.discountPercent!),
+      );
+    },
+  );
+  await check(
+    "demo products cannot create non-test orders and rejected checkout preserves all stock",
+    async () => {
+      await db.product.update({
+        where: { id: jacket.id },
+        data: { demoDataset: "integration-demo" },
+      });
+      const before = await db.inventory.findMany({ orderBy: { id: "asc" } });
+      process.env.TEST_PAYMENTS = "false";
+      try {
+        await assert.rejects(
+          () => checkout(buyer, { idempotencyKey: randomUUID(), address }),
+          /Демонстрационные товары/,
+        );
+      } finally {
+        process.env.TEST_PAYMENTS = "true";
+      }
+      assert.deepEqual(
+        await db.inventory.findMany({ orderBy: { id: "asc" } }),
+        before,
+      );
+    },
+  );
+  await check(
+    "integration fixtures are retained but hidden before the separate demo seed",
+    async () => {
+      await db.seller.updateMany({
+        where: { id: { in: [seller1.id, seller2.id] } },
+        data: { status: "BLOCKED" },
+      });
+      assert.equal((await catalog(new URLSearchParams())).total, 0);
+      assert.equal(
+        await db.seller.count({
+          where: { id: { in: [seller1.id, seller2.id] } },
+        }),
+        2,
+      );
+    },
+  );
   console.log(`\n${count} PostgreSQL integration scenarios passed.`);
 } finally {
   await db.$disconnect();

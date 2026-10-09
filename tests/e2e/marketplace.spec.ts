@@ -1,10 +1,12 @@
 import { test, expect, request, APIRequestContext } from "@playwright/test";
 import { PrismaClient } from "@prisma/client";
+import { execFileSync } from "node:child_process";
 const origin = { Origin: "http://localhost:3000" };
 type Profile = { id: string; displayName: string };
 type Product = {
   id: string;
   title: string;
+  priceMinor: number;
   seller: { id: string; name: string };
   variants: { id: string; size: string; inventory: { available: number } }[];
 };
@@ -47,7 +49,14 @@ test("HTTP onboarding creates two independent stores and moderated products with
       });
       contexts.push(seller);
       sellerContexts.push(seller);
-      await login(seller, name);
+      expect(
+        (
+          await seller.post("/api/auth/dev", {
+            headers: origin,
+            data: { id: user.id },
+          })
+        ).ok(),
+      ).toBeTruthy();
       const application = await seller.post("/api/seller-applications", {
         headers: origin,
         data: {
@@ -200,10 +209,12 @@ test("HTTP session, CSRF, seller ownership, real split checkout and idempotency"
     ).status(),
   ).toBe(403);
   expect((await buyer.get("/api/admin/overview")).status()).toBe(403);
-  const products: Product[] = (await (await buyer.get("/api/catalog")).json())
-    .products;
-  const jacket = products.find((p) => p.title === "Куртка свободного кроя")!;
-  const shoes = products.find((p) => p.title === "Кроссовки для города")!;
+  const jacket: Product = await (
+    await buyer.get("/api/products/wearo-demo-001")
+  ).json();
+  const shoes: Product = await (
+    await buyer.get("/api/products/wearo-demo-151")
+  ).json();
   expect(jacket).toBeTruthy();
   expect(shoes).toBeTruthy();
   const existing = await (await buyer.get("/api/cart")).json();
@@ -224,7 +235,7 @@ test("HTTP session, CSRF, seller ownership, real split checkout and idempotency"
       ).ok(),
     ).toBeTruthy();
   expect((await (await buyer.get("/api/cart")).json()).totalMinor).toBe(
-    5480000,
+    jacket.priceMinor + shoes.priceMinor,
   );
   const checkout = {
     idempotencyKey: crypto.randomUUID(),
@@ -246,8 +257,29 @@ test("HTTP session, CSRF, seller ownership, real split checkout and idempotency"
     await buyer.post("/api/checkout", { headers: origin, data: checkout })
   ).json();
   expect(repeat.id).toBe(payload.id);
+  const stockDb = new PrismaClient();
+  const reservedBefore = await stockDb.inventory.findMany({
+    where: { variantId: { in: [j.id, s.id] } },
+    orderBy: { variantId: "asc" },
+  });
+  expect(reservedBefore.every((v) => v.reserved > 0)).toBeTruthy();
+  execFileSync(
+    process.execPath,
+    ["node_modules/tsx/dist/cli.mjs", "prisma/seed-demo.ts"],
+    { stdio: "pipe" },
+  );
+  expect(
+    await stockDb.inventory.findMany({
+      where: { variantId: { in: [j.id, s.id] } },
+      orderBy: { variantId: "asc" },
+    }),
+  ).toEqual(reservedBefore);
+  expect(
+    await stockDb.product.count({ where: { demoDataset: "wearo-fashion-v1" } }),
+  ).toBe(500);
+  await stockDb.$disconnect();
   const seller = await request.newContext({ baseURL: "http://localhost:3000" });
-  await login(seller, "Тестовый продавец 1");
+  await login(seller, "Демо-продавец · URBAN MODE");
   const sellerOrders = await (
     await seller.get(`/api/sellers/${jacket.seller.id}/orders`)
   ).json();
@@ -293,7 +325,7 @@ test("mobile catalog, profile login, seller editor and admin screens render with
     page.getByRole("heading", { name: "Твой стиль. Твой выбор." }),
   ).toBeVisible();
   await expect(
-    page.getByRole("heading", { name: "Куртка свободного кроя" }).first(),
+    page.getByRole("heading", { name: "Куртка Forma 001 · Песочный" }).first(),
   ).toBeVisible();
   expect(
     await page.evaluate(
@@ -302,7 +334,7 @@ test("mobile catalog, profile login, seller editor and admin screens render with
   ).toBeTruthy();
   await page.goto("/account");
   await page
-    .getByRole("button", { name: "Тестовый продавец 1", exact: true })
+    .getByRole("button", { name: "Демо-продавец · URBAN MODE", exact: true })
     .click();
   await expect(
     page.getByRole("link", { name: "Управлять магазином" }),
