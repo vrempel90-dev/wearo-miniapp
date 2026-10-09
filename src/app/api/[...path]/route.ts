@@ -10,6 +10,9 @@ import {AppError} from '@/server/errors';
 import {cookies} from 'next/headers';
 import {cart,setCartItem} from '@/server/cart';
 import {checkout,listOrders,transitionOrder} from '@/server/orders';
+import {testPayment} from '@/server/payments';
+import {adminData,reviewSeller,moderateProduct,saveCategory,deleteCategory,updateCommission} from '@/server/admin';
+import {requestReturn,reviewReturn} from '@/server/returns';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 async function route(req:Request,{params}:{params:Promise<{path:string[]}>}) {
@@ -43,6 +46,17 @@ async function route(req:Request,{params}:{params:Promise<{path:string[]}>}) {
     if(p[0]==='checkout'&&method==='POST'){await rateLimit(`checkout:${user.id}`,10);return checkout(user,await body(req));}
     if(p[0]==='orders'&&p.length===1&&method==='GET')return listOrders(user);
     if(p[0]==='orders'&&p.length===2&&method==='PATCH')return transitionOrder(user,p[1],await body(req));
+    if(p[0]==='payments'&&p[1]==='test'&&p.length===3&&method==='POST'){await rateLimit(`payment:${user.id}`,10);return testPayment(user,p[2],await body(req));}
+    if(p[0]==='returns'&&p.length===2&&method==='POST')return requestReturn(user,p[1],await body(req));
+    if(p[0]==='admin'){
+      if(method==='GET')return adminData(user,p[1]||'overview',z.coerce.number().int().min(1).max(1000).parse(url.searchParams.get('page')||1));
+      if(p[1]==='sellers'&&p[3]==='commission'&&method==='PATCH')return updateCommission(user,p[2],await body(req));
+      if(p[1]==='sellers'&&p.length===3&&method==='PATCH')return reviewSeller(user,p[2],await body(req));
+      if(p[1]==='products'&&method==='PATCH')return moderateProduct(user,p[2],await body(req));
+      if(p[1]==='returns'&&method==='PATCH')return reviewReturn(user,p[2],await body(req));
+      if(p[1]==='categories'&&(method==='POST'||method==='PATCH'))return saveCategory(user,await body(req),p[2]);
+      if(p[1]==='categories'&&method==='DELETE')return deleteCategory(user,p[2]);
+    }
     if(p[0]==='sellers'&&p.length>=2){
       const sellerId=p[1];
       if(p.length===2&&method==='GET')return sellerDashboard(user,sellerId);
