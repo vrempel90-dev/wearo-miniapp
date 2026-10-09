@@ -1552,9 +1552,9 @@ export default function Marketplace() {
   return (
     <>
       <div className="top-note">
-        {demo.data?.enabled
-          ? "Демонстрационный каталог — заказы и оплата тестовые"
-          : "Казахстан / независимые магазины / цены в ₸"}
+        {demo.data?.enabled === false
+          ? "Казахстан / независимые магазины / цены в ₸"
+          : "Демонстрационный каталог — заказы и оплата тестовые"}
       </div>
       <header>
         <Link href="/" className="logo">
