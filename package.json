@@ -1,13 +1,53 @@
 {
-  "name": "wearo-marketplace", "version": "0.1.0", "private": true,
-  "engines": {"node": ">=22.12.0"},
-  "scripts": {
-    "dev": "next dev", "build": "prisma generate && next build --webpack",
-    "start": "next start -H 0.0.0.0", "typecheck": "tsc --noEmit",
-    "test": "vitest run", "test:integration": "tsx scripts/integration.ts",
-    "db:generate": "prisma generate", "db:migrate": "prisma migrate deploy",
-    "db:seed": "tsx prisma/seed.ts", "db:local": "tsx scripts/local-db.ts",
-    "admin:bootstrap": "tsx scripts/bootstrap-admin.ts", "bot:configure": "tsx scripts/configure-bot.ts"
+  "name": "wearo-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
   },
-  "prisma": {"seed": "tsx prisma/seed.ts"}
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build --webpack",
+    "start": "next start -H 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:integration": "tsx scripts/integration.ts",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:local": "tsx scripts/local-db.ts",
+    "admin:bootstrap": "tsx scripts/bootstrap-admin.ts",
+    "bot:configure": "tsx scripts/configure-bot.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1148.0",
+    "@prisma/client": "^6.19.3",
+    "@twa-dev/sdk": "^8.0.2",
+    "lucide-react": "^1.54.0",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "prisma": "^6.19.3",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "type": "module",
+  "overrides": {
+    "deepmerge-ts": "^8.0.0"
+  }
 }
